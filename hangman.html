@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cheating Hangman</title>
+        <link rel="stylesheet" href="hangman.css">
+    </head>
+    <body>
+        <h1>CHEATING HANGMAN</h1>
+        <br>
+        <h2 id="word"></h2>
+        <form action="" id="form">
+            <input type="text" placeholder="Enter character or guess the word..." id="inputField">
+            <input type="submit" id="submit" value="Check">
+        </form>
+        <p id="triesLeft"></p>
+        <p id="help"></p>
+        <p id="wrong"></p>
+
+        <script>
+        document.getElementById("form").addEventListener("click", function(event){
+            event.preventDefault()
+        });
+        </script>
+        <script src="words.js"></script>
+        <script src="helperFunctions.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>
