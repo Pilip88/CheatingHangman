@@ -41,15 +41,6 @@ submit.addEventListener("click", function() {
             }
         }
     } else if (character.length > 1) {
-        /*
-        for (var i = 0; i < wordList.length; i++) {
-            if (wordList[i] === character) solved = true;
-        }
-        if (solved === false) {
-            triesLeft--;
-            help.innerHTML = "Wrong"
-        }
-        */
         if (wordList.length === 1) {
             if (wordList[0] === character) solved = true;
         } else if (wordList.length > 1) {
